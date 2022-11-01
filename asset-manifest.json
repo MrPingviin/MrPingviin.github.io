@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mrpingviin.github.io/static/css/main.44a1bf19.css",
+    "main.css": "/mrpingviin.github.io/static/css/main.55043905.css",
     "main.js": "/mrpingviin.github.io/static/js/main.dfbd772a.js",
     "static/media/Inconsolata-SemiBold.ttf": "/mrpingviin.github.io/static/media/Inconsolata-SemiBold.7422843958565aeb4c57.ttf",
     "static/media/Inconsolata-Bold.ttf": "/mrpingviin.github.io/static/media/Inconsolata-Bold.37f99d4808fcd34262c5.ttf",
     "static/media/Inconsolata-Regular.ttf": "/mrpingviin.github.io/static/media/Inconsolata-Regular.54748073d423bc6646f7.ttf",
     "index.html": "/mrpingviin.github.io/index.html",
-    "main.44a1bf19.css.map": "/mrpingviin.github.io/static/css/main.44a1bf19.css.map",
+    "main.55043905.css.map": "/mrpingviin.github.io/static/css/main.55043905.css.map",
     "main.dfbd772a.js.map": "/mrpingviin.github.io/static/js/main.dfbd772a.js.map"
   },
   "entrypoints": [
-    "static/css/main.44a1bf19.css",
+    "static/css/main.55043905.css",
     "static/js/main.dfbd772a.js"
   ]
 }
