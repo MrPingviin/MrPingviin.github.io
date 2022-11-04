@@ -1,0 +1,156 @@
+.page {
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+  height: 100%;
+  width: 100%;
+  background-color: #100F11;
+}
+
+.pageContent {
+  display: flex;
+  justify-self: center;
+  height: 100%;
+  width: 85%;
+}
+
+.pageContent_Left {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-end;
+  left: 2%;
+  bottom: 0;
+}
+
+.pageContent_Right {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-end;
+  right: 2%;
+  bottom: 0;
+}
+
+.pageContent_Center {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  gap: 3rem;
+}
+
+.pageContent_Left, .pageContent_Right hr {
+  width: 5rem;
+}
+
+.sideButtonSection {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 50%;
+  margin-bottom: 70%;
+  gap: 1rem;
+}
+
+.sideEmail {
+  display: flex;
+  align-self: center;
+  margin-bottom: 100%;
+  font-size: 1.75rem;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+}
+
+.sideButton {
+  display: flex;
+  align-self: center;
+  padding: 0.5rem;
+  background-color: #850404;
+}
+
+.sideButton img {
+  width: 2.5rem;
+}
+
+.sideLine {
+  transform: rotateZ(90deg);
+  margin-bottom: 50%;
+  border-color: #850404;
+  border-width: 0.15rem;
+}
+
+.pageTitle {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  justify-content: center;
+  width: 80%;
+  text-align: right;
+  grid-gap: 2rem;
+}
+
+.pageTitle span {
+  font-size: 2rem;
+  font-family: Inconsolata-Bold;
+}
+
+.hrline {
+  border-color: #850404;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 0.2rem;
+}
+
+#aboutSection {
+  display: flex;
+  max-width: 100%;
+  overflow: auto;
+  gap: 3rem;
+  justify-content: center;
+}
+
+#aboutDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 50%;
+  font-size: 1.2rem;
+}
+
+#educationSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+#educationSection h1 {
+  font-size: 3.25rem;
+}
+
+#educationSection h3 {
+  color: #F5333F;
+}
+
+#hobbySection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#aboutImage {
+  display: grid;
+  justify-items: center;
+}
+
+#picOfMe {
+  max-width: 75%;
+  filter: grayscale(100%);
+}
+
+#picOfMe:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+}/*# sourceMappingURL=AboutPage.css.map */

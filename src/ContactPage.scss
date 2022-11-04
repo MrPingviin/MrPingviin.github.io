@@ -1,0 +1,58 @@
+@use "PageSample" as *;
+
+
+
+#contactSection {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+
+#contact {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    gap: 5rem;
+    height: auto;
+}
+
+#contactSelection {
+    display: flex;
+    gap: 5rem;
+
+}
+
+
+#linkedIn, #email {
+    padding: 2rem;
+    
+}
+
+#email button {
+    padding: 1.5rem 2.5rem;
+    font-size: 2rem;
+}
+
+#linkedIn button {
+    padding: 1.5rem 2.5rem;
+    font-size: 2rem;
+}
+
+#copyrightSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    max-width: 80%;
+    padding-bottom: 2.5rem;
+    align-items: center;
+  }
+
+
+

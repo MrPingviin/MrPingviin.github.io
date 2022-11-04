@@ -1,0 +1,46 @@
+@use "PageSample" as *;
+
+#projectSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    overflow: auto;
+}
+
+.projectRow {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.25rem;
+    max-width: 80%;
+}
+
+.projectDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 0.1rem solid #F5333F;
+}
+
+.projectDescription h1 {
+    font-family: Inconsolata-Bold;
+}
+
+.projectDescription h2 {
+    color: #F5333F;
+}
+
+#projectsSeeMoreButton {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.projectRow img {
+    filter: grayscale(100%);
+    max-width: 30%;
+}
+
+.projectRow img:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}

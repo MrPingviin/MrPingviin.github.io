@@ -1,0 +1,55 @@
+@use "PageSample" as *;
+
+#aboutSection {
+    display: flex;
+    max-width: 100%;
+    overflow: auto;
+    gap: 3rem;
+    justify-content: center;
+}
+
+#aboutDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 50%;
+    font-size: 1.2rem;
+}
+
+#educationSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+#educationSection h1 {
+   font-size: 3.25rem;
+   
+}
+
+#educationSection h3 {
+    color: #F5333F;
+}
+
+#hobbySection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#aboutImage {
+    display: grid;
+    justify-items: center;
+}
+
+#picOfMe {
+    max-width: 75%;
+    filter: grayscale(100%);
+
+}
+
+#picOfMe:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}

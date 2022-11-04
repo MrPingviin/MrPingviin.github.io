@@ -1,0 +1,149 @@
+.page {
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+  height: 100%;
+  width: 100%;
+  background-color: #100F11;
+}
+
+.pageContent {
+  display: flex;
+  justify-self: center;
+  height: 100%;
+  width: 85%;
+}
+
+.pageContent_Left {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-end;
+  left: 2%;
+  bottom: 0;
+}
+
+.pageContent_Right {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-end;
+  right: 2%;
+  bottom: 0;
+}
+
+.pageContent_Center {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  gap: 3rem;
+}
+
+.pageContent_Left, .pageContent_Right hr {
+  width: 5rem;
+}
+
+.sideButtonSection {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 50%;
+  margin-bottom: 70%;
+  gap: 1rem;
+}
+
+.sideEmail {
+  display: flex;
+  align-self: center;
+  margin-bottom: 100%;
+  font-size: 1.75rem;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+}
+
+.sideButton {
+  display: flex;
+  align-self: center;
+  padding: 0.5rem;
+  background-color: #850404;
+}
+
+.sideButton img {
+  width: 2.5rem;
+}
+
+.sideLine {
+  transform: rotateZ(90deg);
+  margin-bottom: 50%;
+  border-color: #850404;
+  border-width: 0.15rem;
+}
+
+.pageTitle {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  justify-content: center;
+  width: 80%;
+  text-align: right;
+  grid-gap: 2rem;
+}
+
+.pageTitle span {
+  font-size: 2rem;
+  font-family: Inconsolata-Bold;
+}
+
+.hrline {
+  border-color: #850404;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 0.2rem;
+}
+
+#projectSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  overflow: auto;
+}
+
+.projectRow {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.25rem;
+  max-width: 80%;
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 0.1rem solid #F5333F;
+}
+
+.projectDescription h1 {
+  font-family: Inconsolata-Bold;
+}
+
+.projectDescription h2 {
+  color: #F5333F;
+}
+
+#projectsSeeMoreButton {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+
+.projectRow img {
+  filter: grayscale(100%);
+  max-width: 30%;
+}
+
+.projectRow img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+}/*# sourceMappingURL=ProjectsPage.css.map */

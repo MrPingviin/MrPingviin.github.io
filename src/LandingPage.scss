@@ -1,0 +1,228 @@
+@use "./PageSample.css" as *;
+
+#navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  justify-content: center;
+  font-size: 1.35rem;
+  background-color: #100f11;
+  z-index: 100;
+}
+
+
+#welcomeLine_1 {
+  opacity: 0;
+  animation: fadein_anim 0.2s 0.3s linear forwards;
+}
+
+#welcomeLine_2 {
+  opacity: 0;
+  animation: fadein_anim 0.2s 0.5s linear forwards;
+}
+
+#welcomeLine_3 {
+  opacity: 0;
+  animation: fadein_anim 0.2s 0.7s linear forwards;
+}
+
+#checkOutProjectButton {
+  display: flex;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: fadein_anim 0.2s 0.9s linear forwards;
+}
+
+#welcomeImage {
+  display: flex;
+  justify-content: center;
+  //background-color: yellow;
+  opacity: 0;
+  animation: fadein_anim 0.2s 1.1s linear forwards;
+}
+
+#logoSection {
+  opacity: 0;
+  animation: fadein_anim 0.2s 1.3s linear forwards;
+}
+
+#homeOption {
+  opacity: 0;
+  animation: fadein_anim 0.2s 1.5s linear forwards;
+}
+
+#skillOption {
+  opacity: 0;
+  animation: fadein_anim 0.2s 1.7s linear forwards;
+}
+
+#projectsOption {
+  opacity: 0;
+  animation: fadein_anim 0.2s 1.9s linear forwards;
+}
+
+#aboutOption {
+  opacity: 0;
+  animation: fadein_anim 0.2s 2.1s linear forwards;
+}
+
+#contactOption {
+  opacity: 0;
+  animation: fadein_anim 0.2s 2.3s linear forwards;
+}
+
+#resumeButton {
+  padding: 1rem 1.5rem;
+  font-size: 1.35rem;
+  opacity: 0;
+  animation: fadein_anim 0.2s 2.5s linear forwards;
+}
+
+#githubSideButton {
+  transform: rotateZ(-60deg) translateY(-500%);
+  animation: sidebutton_anim 0.2s 2.7s linear forwards;
+}
+
+#mailSideButton {
+  transform: rotateZ(-60deg) translateY(-500%);
+  animation: sidebutton_anim 0.2s 2.9s linear forwards;
+
+}
+
+#linkedinSideButton {
+  transform: rotateZ(-60deg) translateY(-500%);
+  animation: sidebutton_anim 0.2s 3.1s linear forwards;
+}
+
+#leftSideline {
+  transform: translateY(10rem) rotate(90deg);
+  animation: leftsideline_anim 0.2s 3.3s linear forwards;
+}
+
+#sideEmail {
+  transform: translateX(10rem);
+  animation: sideEmail_anim 0.2s 3.3s linear forwards;
+}
+
+#right_sideline {
+  transform: translateY(10rem) rotate(90deg);
+  animation: rightsideline_anim 0.2s 3.3s linear forwards;
+}
+
+
+#navbar-content {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+
+  justify-content: space-between;
+}
+
+#logoSection {
+  padding: 0rem 2rem;
+  font-size: 2rem;
+  font-family: Inconsolata-Bold;
+}
+
+#navSelectionSection {
+  display: flex;
+  gap: 3rem;
+  padding: 0rem 2rem;
+  align-items: center;
+}
+
+#navOptions {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+#landingPageContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  //background-color: blue;
+  width: 95%;
+  height: 80%;
+  align-content: center;
+}
+
+
+#welcomeMessage {
+  display: flex;
+  justify-content: center;
+  //background-color: purple;
+}
+
+#welcomeMessageContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+  font-size: 2.35rem;
+  justify-content: center;
+}
+
+
+#welcomeMessageContent p {
+  font-size: 1.7rem;
+}
+
+#welcomeImage img {
+  max-width: 80%;
+}
+
+@keyframes rightsideline_anim {
+  0% {
+    transform: translateY(10rem) rotate(90deg);
+  }
+
+  100% {
+    transform: translateY(0rem) rotate(90deg);
+  }
+}
+
+@keyframes sideEmail_anim {
+  0% {
+    transform: translateX(10rem);
+  }
+
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes leftsideline_anim {
+  0% {
+    transform: translateY(10rem) rotate(90deg);
+  }
+
+  100% {
+    transform: translateY(0rem) rotate(90deg);
+  }
+}
+
+@keyframes sidebutton_anim {
+  0% {
+    transform: rotateZ(-60deg) translateY(-500%);
+  }
+
+  100% {
+    transform: rotateZ(0deg) translateY(0%);
+  }
+}
+
+@keyframes fadein_anim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

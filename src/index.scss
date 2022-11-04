@@ -1,0 +1,470 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: filter 0.05s linear;
+    scroll-behavior: smooth;
+    word-break: break-word;
+    user-select: none;
+  
+  }
+  
+  html, body {
+    font-family: Inconsolata-Regular;
+    color: white;
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+  
+  img {
+    aspect-ratio: auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover, button:hover {
+    cursor: pointer;
+    filter: brightness(80%)
+  }
+  
+  #root {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  button {
+    border: none;
+    font-weight: bold;
+    background-color: #9A0000;
+    color: #FFFFFF;
+    border-radius: 0.3rem;
+    font-family: Inconsolata-SemiBold;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #F5333F;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #9A0000;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 1em;
+  }
+  
+  
+  
+  @font-face {
+  font-family: Inconsolata-Regular;
+  src: url("./assets/static/Inconsolata/Inconsolata-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: Inconsolata-Bold;
+    src: url("./assets/static/Inconsolata/Inconsolata-Bold.ttf");
+    }
+    
+  @font-face {
+    font-family: Inconsolata-SemiBold;
+    src: url("./assets/static/Inconsolata/Inconsolata-SemiBold.ttf");
+    }
+  
+    @media screen and (max-width: 1366px) {
+        * {
+            overflow: hidden;
+            
+        }
+
+        body {
+          font-size: 15px;
+        }
+
+    .page {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .pageTitle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .pageTitle span {
+      font-size: 2.75rem;
+    }
+      
+  
+      #logoSection {
+        font-size: 2.5rem;
+      }
+    
+      #navbar-content {
+        justify-content: center;
+      }
+
+      #navSelectionSection {
+        display: none;
+      }
+    
+      #landingPageContent {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 3rem;
+        font-size: 1.5rem;
+      }
+    
+      .pageContent {
+        width: 100%;
+      }
+
+      .pageContent_Center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: 1rem;
+      }
+    
+      .pageContent_Left {
+        display: none;
+      }
+    
+      .pageContent_Right {
+        display: none;
+      }
+    
+      #welcomeMessageContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.75rem;
+        gap: 1.5rem;
+      }
+
+      #welcomeMessageContent p {
+        font-size: 1.6rem;
+      }
+
+      #welcomeImage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #welcomeImage img {
+        max-width: 60%;
+      }
+
+      #checkOutProjectButton {
+        padding: 1rem 1rem;
+        font-size: 2rem;
+      }
+      
+      .skillCard {
+        width: 8rem;
+        font-size: 1.6em;
+      }
+
+      .skillCard img {
+        width: 100%;
+        
+      }
+
+      #projectSection {
+        max-height: auto;
+      }
+
+      .projectRow {
+        display: flex;
+        flex-direction: column;
+        max-width: 75%;
+        font-size: 1.5rem;
+       
+      }
+
+      .projectRow img {
+        max-width: 100%;
+  
+      }
+
+      .projectDescription p{
+      margin-bottom: 1.5rem;
+     
+      }
+
+      #projectsSeeMoreButton {
+        font-size: 2rem;
+      }
+
+      #aboutSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #aboutImage img {
+        max-width: 90%;
+      }
+      
+      #educationSection {
+        gap: 1.25rem;
+        font-size: 1.75rem;
+      }
+
+      
+      #aboutDescription {
+        max-width: 75%;
+        
+      }
+
+      #hobbySection span {
+        font-size: 1.75rem;
+      }
+
+      #contactSelection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+
+      }
+
+      #contactSection {
+        max-width: 95%;
+        gap: 2rem;
+      }
+
+      #contactSection h2 {
+        font-size: 1.75rem;
+      }
+
+      #linkedIn {
+        margin: 0;
+        padding: 2rem 0rem 0.5rem 0rem;
+      }
+
+      #email {
+        padding: 1.75rem 1rem 2.5rem 1rem;
+      }
+
+      #copyrightSection {
+
+        font-size: 1.25rem;
+
+      }
+
+
+    }
+    
+    @media screen and (max-width: 450px) {
+      * {
+        overflow: hidden;
+    }
+.page {
+    height: auto;
+    max-width: 100%;
+}
+
+.pageTitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+     }
+
+     .pageTitle span {
+      font-size: 2rem;
+     }
+  
+
+  #logoSection {
+    font-size: 1.5rem;
+  }
+
+  #navbar-content {
+    justify-content: center;
+  }
+
+  #navSelectionSection {
+    display: none;
+  }
+
+  #landingPageContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 3rem;
+  }
+
+  .pageContent {
+    width: 100%;
+  }
+
+  .pageContent_Center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .pageContent_Left {
+    display: none;
+  }
+
+  .pageContent_Right {
+    display: none;
+  }
+
+  #welcomeMessageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    gap: 1.10rem;
+  }
+
+  #welcomeMessageContent p {
+    font-size: 1.1rem;
+  }
+
+  #welcomeImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #checkOutProjectButton {
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .skillCard {
+    width: 6rem;
+    font-size: 1.1rem;
+    min-height: auto;
+  }
+
+  .skillCard img {
+    width: 100%;
+  }
+
+  #projectSection {
+    max-height: auto;
+  }
+
+  .projectRow {
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    font-size: 1.1rem;
+   
+  }
+
+  .projectRow img {
+    max-width: 100%;
+  }
+
+  .projectDescription p{
+  margin-bottom: 1.5rem;
+  }
+
+  #projectsSeeMoreButton {
+    font-size: 1.25rem;
+  }
+
+  #aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aboutSection img {
+    max-width: 75%;
+  }
+
+  #aboutDescription {
+    max-width: 75%;
+  }
+
+  #educationSection {
+    gap: 1rem;
+  }
+
+  #educationSection {
+    font-size: 1.1rem;
+  }
+
+  #educationSection h1 {
+    font-size: 2.5rem;
+  }
+  #hobbySection {
+    font-size: 1.15rem;
+  }
+
+  #hobbySection span {
+    font-size: 1.1rem;
+  }
+
+  #contactSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+
+  }
+
+  #contactSection {
+    max-width: 95%;
+
+  }
+
+  
+  #contactSection h1 {
+    font-size: 2rem;
+  }
+
+  #contactSection h2 {
+    font-size: 1rem;
+  }
+
+  #linkedIn {
+    margin: 0;
+    padding: 1rem 0rem 0rem 0rem;
+    
+  }
+
+  #linkedIn button {
+    font-size: 1.5rem;
+  }
+
+  #email {
+    padding: 1.75rem 1rem 5rem 1rem;
+  }
+
+  #email button {
+    font-size: 1.5rem;
+  }
+
+  #copyrightSection {
+
+    font-size: 0.90rem;
+
+  }
+    }
+  
