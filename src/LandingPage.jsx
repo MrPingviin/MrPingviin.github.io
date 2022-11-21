@@ -92,7 +92,7 @@ function LandingPage() {
               <span onClick={() => (window.location.href = "#landingPage")}>
                 Penguin Web
               </span>
-              <AiOutlineMenu id="mobile-menu-icon" onClick={mobileMenuOpener} />
+              <AiOutlineMenu id="mobile-menu-icon" className="mobile" onClick={mobileMenuOpener} />
             </div>
             <div id="navSelectionSection">
               <ul id="navOptions">
