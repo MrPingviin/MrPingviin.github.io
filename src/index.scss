@@ -1,303 +1,429 @@
 * {
-    padding: 0;
-    margin: 0;
-    transition: filter 0.05s linear;
-    scroll-behavior: smooth;
-    word-break: break-word;
-    user-select: none;
-  
-  }
-  
-  html, body {
-    font-family: Inconsolata-Regular;
-    color: white;
-    height: 100%;
-    width: 100%;
-  }
-  
-  body {
-    font-size: 14px;
-  }
-  
-  img {
-    aspect-ratio: auto;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  a:hover, button:hover {
-    cursor: pointer;
-    filter: brightness(80%)
-  }
-  
-  #root {
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-  }
-  
-  button {
-    border: none;
-    font-weight: bold;
-    background-color: #9A0000;
-    color: #FFFFFF;
-    border-radius: 0.3rem;
-    font-family: Inconsolata-SemiBold;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #F5333F;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: #9A0000;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 1em;
-  }
-  
-  
-  
-  @font-face {
-  font-family: Inconsolata-Regular;
-  src: url("./assets/static/Inconsolata/Inconsolata-Regular.ttf");
-  }
-  
-  @font-face {
-    font-family: Inconsolata-Bold;
-    src: url("./assets/static/Inconsolata/Inconsolata-Bold.ttf");
-    }
-    
-  @font-face {
-    font-family: Inconsolata-SemiBold;
-    src: url("./assets/static/Inconsolata/Inconsolata-SemiBold.ttf");
-    }
-  
-    @media screen and (max-width: 1366px) {
-        * {
-            overflow: hidden;
-            
-        }
+  padding: 0;
+  margin: 0;
+  transition: filter 0.05s linear;
+  scroll-behavior: smooth;
+  word-break: break-word;
+  user-select: none;
 
-        body {
-          font-size: 15px;
-        }
-
-    .page {
-        height: auto;
-        max-width: 100%;
-    }
-
-    .pageTitle {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .pageTitle span {
-      font-size: 2.75rem;
-    }
-      
-  
-      #logoSection {
-        font-size: 2.5rem;
-      }
-    
-      #navbar-content {
-        justify-content: center;
-      }
-
-      #navSelectionSection {
-        display: none;
-      }
-    
-      #landingPageContent {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        gap: 3rem;
-        font-size: 1.5rem;
-      }
-    
-      .pageContent {
-        width: 100%;
-      }
-
-      .pageContent_Center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        gap: 1rem;
-      }
-    
-      .pageContent_Left {
-        display: none;
-      }
-    
-      .pageContent_Right {
-        display: none;
-      }
-    
-      #welcomeMessageContent {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        font-size: 1.75rem;
-        gap: 1.5rem;
-      }
-
-      #welcomeMessageContent p {
-        font-size: 1.6rem;
-      }
-
-      #welcomeImage {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      #welcomeImage img {
-        max-width: 60%;
-      }
-
-      #checkOutProjectButton {
-        padding: 1rem 1rem;
-        font-size: 2rem;
-      }
-      
-      .skillCard {
-        width: 8rem;
-        font-size: 1.6em;
-      }
-
-      .skillCard img {
-        width: 100%;
-        
-      }
-
-      #projectSection {
-        max-height: auto;
-      }
-
-      .projectRow {
-        display: flex;
-        flex-direction: column;
-        max-width: 75%;
-        font-size: 1.5rem;
-       
-      }
-
-      .projectRow img {
-        max-width: 100%;
-  
-      }
-
-      .projectDescription {
-        & button {
-          margin-top: 1rem;
-          padding: 1rem;
-          font-size: 1.5rem;
-          max-width: 100%;
-      }
-      }
-
-      .projectDescription p{
-      margin-bottom: 1.5rem;
-     
-      }
-
-      #projectsSeeMoreButton {
-        font-size: 2rem;
-      }
-
-      #aboutSection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      #aboutImage img {
-        max-width: 90%;
-      }
-      
-      #educationSection {
-        gap: 1.25rem;
-        font-size: 1.75rem;
-      }
-
-      
-      #aboutDescription {
-        max-width: 75%;
-        
-      }
-
-      #hobbySection span {
-        font-size: 1.75rem;
-      }
-
-      #contactSelection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0rem;
-
-      }
-
-      #contactSection {
-        max-width: 95%;
-        gap: 2rem;
-      }
-
-      #contactSection h2 {
-        font-size: 1.75rem;
-      }
-
-      #linkedIn {
-        margin: 0;
-        padding: 2rem 0rem 0.5rem 0rem;
-      }
-
-      #email {
-        padding: 1.75rem 1rem 2.5rem 1rem;
-      }
-
-      #copyrightSection {
-
-        font-size: 1.25rem;
-
-      }
-
-
-    }
-    
-    @media screen and (max-width: 450px) {
-      * {
-        overflow: hidden;
-    }
-.page {
-    height: auto;
-    max-width: 100%;
 }
 
-.pageTitle {
+html,
+body {
+  font-family: Inconsolata-Regular;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 14px;
+}
+
+img {
+  aspect-ratio: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+  filter: brightness(80%)
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.mobile {
+  display: none;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+button {
+  border: none;
+  font-weight: bold;
+  background-color: #9A0000;
+  color: #FFFFFF;
+  border-radius: 0.3rem;
+  font-family: Inconsolata-SemiBold;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F5333F;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #9A0000;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+
+
+@font-face {
+  font-family: Inconsolata-Regular;
+  src: url("./assets/static/Inconsolata/Inconsolata-Regular.ttf");
+}
+
+@font-face {
+  font-family: Inconsolata-Bold;
+  src: url("./assets/static/Inconsolata/Inconsolata-Bold.ttf");
+}
+
+@font-face {
+  font-family: Inconsolata-SemiBold;
+  src: url("./assets/static/Inconsolata/Inconsolata-SemiBold.ttf");
+}
+
+@media screen and (max-width: 1366px) {
+  * {
+    overflow: hidden;
+
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .page {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .pageTitle {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 2rem;
-     }
+  }
 
-     .pageTitle span {
-      font-size: 2rem;
-     }
-  
+  .pageTitle span {
+    font-size: 2.75rem;
+  }
+
+
+  #logoSection {
+    font-size: 2.5rem;
+  }
+
+  #mobile-menu {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 499;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #100F11;
+    font-size: 2rem;
+  }
+
+  .mobile-menu-popup {
+    animation: mobile-menu-popup-anim 0.15s linear forwards;
+  }
+
+  @keyframes mobile-menu-popup-anim {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    height: 90%;
+    width: 90%;
+
+    #mobile-menu-close-icon {
+      position: absolute;
+      right: 2.5vh;
+      top: 2.5vh;
+      z-index: 10;
+      font-size: 5rem;
+    }
+
+    #mobile-menu-title-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    #mobile-menu-main-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      font-family: Inconsolata-SemiBold;
+
+      & li {
+        font-size: 2rem;
+      }
+    }
+
+    #resumeButton-mobile {
+      padding: 1rem 1.5rem;
+      font-size: 3rem;
+    }
+  }
+
+  #navbar-content {
+
+    width: 100%;
+    justify-content: center;
+  }
+
+  #navSelectionSection {
+    display: none;
+  }
+
+  #navOptions {
+
+    & li {
+      display: none;
+    }
+  }
+
+  #mobile-menu-icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      cursor: pointer;
+    }
+  }
+
+  #logoSection {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #resumeButton {
+    display: none;
+  }
+
+  #landingPageContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .pageContent {
+    width: 100%;
+  }
+
+  .pageContent_Center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .pageContent_Left {
+    display: none;
+  }
+
+  .pageContent_Right {
+    display: none;
+  }
+
+  #welcomeMessageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.75rem;
+    gap: 1.5rem;
+  }
+
+  #welcomeMessageContent p {
+    font-size: 1.6rem;
+  }
+
+  #welcomeImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #welcomeImage img {
+    max-width: 60%;
+  }
+
+  #checkOutProjectButton {
+    padding: 1rem 1rem;
+    font-size: 2rem;
+  }
+
+  .skillCard {
+    width: 8rem;
+    font-size: 1.6em;
+  }
+
+  .skillCard img {
+    width: 100%;
+
+  }
+
+  #projectSection {
+    max-height: auto;
+  }
+
+  .projectRow {
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    font-size: 1.5rem;
+
+  }
+
+  .projectRow img {
+    max-width: 100%;
+
+  }
+
+  .projectDescription {
+    & button {
+      margin-top: 1rem;
+      padding: 1rem;
+      font-size: 1.5rem;
+      max-width: 100%;
+    }
+  }
+
+  .projectDescription p {
+    margin-bottom: 1.5rem;
+
+  }
+
+  #projectsSeeMoreButton {
+    font-size: 2rem;
+  }
+
+  #aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aboutImage img {
+    max-width: 90%;
+  }
+
+  #educationSection {
+    gap: 1.25rem;
+    font-size: 1.75rem;
+  }
+
+
+  #aboutDescription {
+    max-width: 75%;
+
+  }
+
+  #hobbySection span {
+    font-size: 1.75rem;
+  }
+
+  #contactSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+
+  }
+
+  #contactSection {
+    max-width: 95%;
+    gap: 2rem;
+  }
+
+  #contactSection h2 {
+    font-size: 1.75rem;
+  }
+
+  #linkedIn {
+    margin: 0;
+    padding: 2rem 0rem 0.5rem 0rem;
+  }
+
+  #email {
+    padding: 1.75rem 1rem 2.5rem 1rem;
+  }
+
+  #copyrightSection {
+
+    font-size: 1.25rem;
+
+  }
+
+
+}
+
+@media screen and (max-width: 450px) {
+  * {
+    overflow: hidden;
+  }
+
+  .page {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .pageTitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .pageTitle span {
+    font-size: 2rem;
+  }
+
+  #mobile-menu-icon {
+    font-size: 2rem;
+  }
+
 
   #logoSection {
     font-size: 1.5rem;
@@ -307,15 +433,70 @@
     justify-content: center;
   }
 
-  #navSelectionSection {
-    display: none;
-  }
-
   #landingPageContent {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     gap: 3rem;
+  }
+
+  #mobile-menu {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 499;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #100F11;
+    font-size: 1rem;
+  }
+
+  #mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 90%;
+    width: 90%;
+
+    #mobile-menu-close-icon {
+      position: absolute;
+      right: 2.5vh;
+      top: 2.5vh;
+      z-index: 10;
+      font-size: 3rem;
+    }
+
+    #mobile-menu-title-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    #mobile-menu-main-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      font-family: Inconsolata-SemiBold;
+
+      & li {
+        font-size: 1.5rem;
+      }
+    }
+
+    #resumeButton-mobile {
+      padding: 1rem 1.5rem;
+      font-size: 2rem;
+    }
   }
 
   .pageContent {
@@ -361,8 +542,9 @@
   #checkOutProjectButton {
     padding: 1rem 1rem;
     font-size: 1.1rem;
+    max-width: 100%;
   }
-  
+
   .skillCard {
     width: 8rem;
     font-size: 1.1rem;
@@ -382,15 +564,15 @@
     flex-direction: column;
     max-width: 75%;
     font-size: 1.1rem;
-   
+
   }
 
   .projectRow img {
     max-width: 100%;
   }
 
-  .projectDescription p{
-  margin-bottom: 1.5rem;
+  .projectDescription p {
+    margin-bottom: 1.5rem;
   }
 
   #projectsSeeMoreButton {
@@ -422,6 +604,7 @@
   #educationSection h1 {
     font-size: 2.5rem;
   }
+
   #hobbySection {
     font-size: 1.15rem;
   }
@@ -443,7 +626,7 @@
 
   }
 
-  
+
   #contactSection h1 {
     font-size: 2rem;
   }
@@ -455,7 +638,7 @@
   #linkedIn {
     margin: 0;
     padding: 1rem 0rem 0rem 0rem;
-    
+
   }
 
   #linkedIn button {
@@ -475,5 +658,4 @@
     font-size: 0.90rem;
 
   }
-    }
-  
+}

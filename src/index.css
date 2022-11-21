@@ -10,7 +10,8 @@
           user-select: none;
 }
 
-html, body {
+html,
+body {
   font-family: Inconsolata-Regular;
   color: white;
   height: 100%;
@@ -30,9 +31,18 @@ a {
   color: white;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   cursor: pointer;
   filter: brightness(80%);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.mobile {
+  display: none;
 }
 
 #root {
@@ -81,6 +91,9 @@ button {
   body {
     font-size: 15px;
   }
+  .mobile {
+    display: flex;
+  }
   .page {
     height: auto;
     max-width: 100%;
@@ -97,10 +110,106 @@ button {
   #logoSection {
     font-size: 2.5rem;
   }
+  #mobile-menu {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 499;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #100F11;
+    font-size: 2rem;
+  }
+  .mobile-menu-popup {
+    -webkit-animation: mobile-menu-popup-anim 0.15s linear forwards;
+            animation: mobile-menu-popup-anim 0.15s linear forwards;
+  }
+  @-webkit-keyframes mobile-menu-popup-anim {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes mobile-menu-popup-anim {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    height: 90%;
+    width: 90%;
+  }
+  #mobile-menu-content #mobile-menu-close-icon {
+    position: absolute;
+    right: 2.5vh;
+    top: 2.5vh;
+    z-index: 10;
+    font-size: 5rem;
+  }
+  #mobile-menu-content #mobile-menu-title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  #mobile-menu-content #mobile-menu-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    font-family: Inconsolata-SemiBold;
+  }
+  #mobile-menu-content #mobile-menu-main-section li {
+    font-size: 2rem;
+  }
+  #mobile-menu-content #resumeButton-mobile {
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+  }
   #navbar-content {
+    width: 100%;
     justify-content: center;
   }
   #navSelectionSection {
+    display: none;
+  }
+  #navOptions li {
+    display: none;
+  }
+  #mobile-menu-icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  #mobile-menu-icon:hover {
+    cursor: pointer;
+  }
+  #mobile-menu-icon:focus {
+    cursor: pointer;
+  }
+  #logoSection {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+  #resumeButton {
     display: none;
   }
   #landingPageContent {
@@ -240,20 +349,72 @@ button {
   .pageTitle span {
     font-size: 2rem;
   }
+  #mobile-menu-icon {
+    font-size: 2rem;
+  }
   #logoSection {
     font-size: 1.5rem;
   }
   #navbar-content {
     justify-content: center;
   }
-  #navSelectionSection {
-    display: none;
-  }
   #landingPageContent {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     gap: 3rem;
+  }
+  #mobile-menu {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 499;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #100F11;
+    font-size: 1rem;
+  }
+  #mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 90%;
+    width: 90%;
+  }
+  #mobile-menu-content #mobile-menu-close-icon {
+    position: absolute;
+    right: 2.5vh;
+    top: 2.5vh;
+    z-index: 10;
+    font-size: 3rem;
+  }
+  #mobile-menu-content #mobile-menu-title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #mobile-menu-content #mobile-menu-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-family: Inconsolata-SemiBold;
+  }
+  #mobile-menu-content #mobile-menu-main-section li {
+    font-size: 1.5rem;
+  }
+  #mobile-menu-content #resumeButton-mobile {
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
   }
   .pageContent {
     width: 100%;
@@ -291,6 +452,7 @@ button {
   #checkOutProjectButton {
     padding: 1rem 1rem;
     font-size: 1.1rem;
+    max-width: 100%;
   }
   .skillCard {
     width: 8rem;

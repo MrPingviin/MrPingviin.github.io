@@ -127,7 +127,8 @@
   gap: 5rem;
 }
 
-#linkedIn, #email {
+#linkedIn,
+#email {
   padding: 2rem;
 }
 

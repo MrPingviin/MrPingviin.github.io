@@ -1,34 +1,44 @@
-
-import { WindowSharp } from '@mui/icons-material'
-import './ProjectsPage.css'
+import { WindowSharp } from "@mui/icons-material";
+import "./ProjectsPage.css";
 
 function ProjectsPage() {
-
   return (
     <div id="projectPage" className="page">
-    <div className="pageContent">
+      <div className="pageContent">
+        <div className="pageContent_Center">
+          <div className="pageTitle">
+            <span>02. - My Projects</span> <hr className="hrline" />
+          </div>
 
- <div className="pageContent_Center">
+          <div id="projectSection">
+            <div className="projectRow">
+              <img
+                src="./src/img/food_factory.webp"
+                alt="Placeholder"
+                onClick={() =>
+                  (window.location.href = "http://portfolioworks.ddns.net/")
+                }
+              />
+              <div className="projectDescription">
+                <h1>Restaurant App | FoodFactory</h1>
+                <h2>HTML5, CSS3/SASS, React, ExpressJS</h2>
+                <p>
+                  Complete restaurant app with a fully functional backend. The
+                  menu is fully dynamic, the site handles bookings and orders as
+                  well. The restaurant on it's admin page is able to manage
+                  everything.
+                </p>
+                <button
+                  onClick={() =>
+                    (window.location.href = "http://portfolioworks.ddns.net/")
+                  }
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
 
-<div className="pageTitle">
- <span>02. - My Projects</span> <hr className="hrline"/>
- </div>
-
-    <div id="projectSection">
-
-      <div className="projectRow">
-        <img src="./src/img/food_factory.webp" alt="Placeholder" onClick={() => window.location.href = "http://portfolioworks.ddns.net/"}/>
-        <div className="projectDescription">
-          <h1>Restaurant App | FoodFactory</h1>
-          <h2>HTML5, CSS3/SASS, React, ExpressJS</h2>
-          <p>Complete restaurant app with a fully functional backend. The menu is fully dynamic, the site handles bookings and orders as well. The restaurant on it's admin page is able to manage everything.</p>
-          <button onClick={() => window.location.href = "http://portfolioworks.ddns.net/"}>Live Demo</button>
-        </div>
-        
-      </div>
-
-
-     {/*  <div className="projectRow">
+            {/*  <div className="projectRow">
       <div className="projectDescription">
           <h1>ToDo App</h1>
           <h2>HTML5, CSS3, React, ExpressJS</h2>
@@ -38,23 +48,21 @@ function ProjectsPage() {
         
       </div> */}
 
-      <button id="projectsSeeMoreButton" onClick={() => alert("Coming Soon. I'm working on large scale portfolio projects, and those are takes a quite of time to make. :)")}>See More</button>
-
-
-
+            <button
+              id="projectsSeeMoreButton"
+              onClick={() =>
+                alert(
+                  "Coming Soon. I'm working on large scale portfolio projects, and those are takes a quite of time to make. :)"
+                )
+              }
+            >
+              See More
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
- </div>
-
-
-
-
- 
-</div>
-</div>
-  )
+  );
 }
 
-export default ProjectsPage
+export default ProjectsPage;
