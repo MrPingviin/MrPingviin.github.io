@@ -75,7 +75,7 @@ function LandingPage() {
                 id="resumeButton-mobile"
                 onClick={() =>
                   (window.location.href =
-                    "https://www.linkedin.com/in/szabo-richard/")
+                    "https://www.penguinweb.net/Richard-Szabo-Frontend-Developer-CV")
                 }
               >
                 Resume
@@ -131,7 +131,7 @@ function LandingPage() {
                 id="resumeButton"
                 onClick={() =>
                   (window.location.href =
-                    "https://www.linkedin.com/in/szabo-richard/")
+                    "https://www.penguinweb.net/Richard-Szabo-Frontend-Developer-CV")
                 }
               >
                 Resume
