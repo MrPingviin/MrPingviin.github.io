@@ -36,6 +36,9 @@
   font-size: 1.5rem;
   opacity: 0;
   animation: fadein_anim 0.2s 0.9s linear forwards;
+  max-width: 60%;
+  justify-content: center;
+  align-items: center;
 }
 
 #welcomeImage {
@@ -49,6 +52,11 @@
 #logoSection {
   opacity: 0;
   animation: fadein_anim 0.2s 1.3s linear forwards;
+
+  & span:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+  }
 }
 
 #homeOption {
@@ -107,6 +115,11 @@
 #sideEmail {
   transform: translateX(10rem);
   animation: sideEmail_anim 0.2s 3.3s linear forwards;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+  }
 }
 
 #right_sideline {
@@ -141,6 +154,11 @@
   display: flex;
   list-style: none;
   gap: 2rem;
+
+  & li:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+  }
 }
 
 #landingPageContent {

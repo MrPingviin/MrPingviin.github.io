@@ -1,6 +1,5 @@
 import "./ContactPage.css";
 
-
 function ContactPage() {
   return (
     <div id="contactPage" className="page">
@@ -18,26 +17,30 @@ function ContactPage() {
           <div id="contact">
             <div id="contactSelection">
               <div id="linkedIn">
-                <a
-                  href="https://www.linkedin.com/in/rich%C3%A1rd-szab%C3%B3/"
-                  target="blank"
+                <button
+                  onClick={() =>
+                    (window.location.href =
+                      "https://www.linkedin.com/in/szabo-richard/")
+                  }
                 >
-                  <button>LinkedIn</button>
-                </a>
+                  LinkedIn
+                </button>
               </div>
               <div id="email">
-                <a href="mailto:hello@penguinweb.eu">
-                  <button>E-mail</button>
-                </a>
+                <button
+                  onClick={() =>
+                    (window.location.href = "mailto:hello@penguinweb.eu")
+                  }
+                >
+                  E-mail
+                </button>
               </div>
             </div>
           </div>
           <div id="copyrightSection">
-          <span>Penguinweb @ 2022</span>
-          <span>Made with ❤️ by Richard Szabo</span>
-
+            <span>Penguinweb @ 2022</span>
+            <span>Made with ❤️ by Richard Szabo</span>
           </div>
-      
         </div>
       </div>
     </div>

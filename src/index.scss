@@ -200,6 +200,15 @@
   
       }
 
+      .projectDescription {
+        & button {
+          margin-top: 1rem;
+          padding: 1rem;
+          font-size: 1.5rem;
+          max-width: 100%;
+      }
+      }
+
       .projectDescription p{
       margin-bottom: 1.5rem;
      

@@ -141,6 +141,9 @@
   opacity: 0;
   -webkit-animation: fadein_anim 0.2s 0.9s linear forwards;
           animation: fadein_anim 0.2s 0.9s linear forwards;
+  max-width: 60%;
+  justify-content: center;
+  align-items: center;
 }
 
 #welcomeImage {
@@ -155,6 +158,10 @@
   opacity: 0;
   -webkit-animation: fadein_anim 0.2s 1.3s linear forwards;
           animation: fadein_anim 0.2s 1.3s linear forwards;
+}
+#logoSection span:hover {
+  cursor: pointer;
+  filter: brightness(80%);
 }
 
 #homeOption {
@@ -224,6 +231,10 @@
   -webkit-animation: sideEmail_anim 0.2s 3.3s linear forwards;
           animation: sideEmail_anim 0.2s 3.3s linear forwards;
 }
+#sideEmail:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
 
 #right_sideline {
   transform: translateY(10rem) rotate(90deg);
@@ -256,6 +267,10 @@
   display: flex;
   list-style: none;
   gap: 2rem;
+}
+#navOptions li:hover {
+  cursor: pointer;
+  filter: brightness(80%);
 }
 
 #landingPageContent {

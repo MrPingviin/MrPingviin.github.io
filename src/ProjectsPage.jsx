@@ -1,4 +1,5 @@
 
+import { WindowSharp } from '@mui/icons-material'
 import './ProjectsPage.css'
 
 function ProjectsPage() {
@@ -16,16 +17,18 @@ function ProjectsPage() {
     <div id="projectSection">
 
       <div className="projectRow">
-        <img src="./src/img/placeholder.webp" alt="Placeholder" />
+        <img src="./src/img/food_factory.webp" alt="Placeholder" onClick={() => window.location.href = "http://portfolioworks.ddns.net/"}/>
         <div className="projectDescription">
-          <h1>Pizzeria / Restaurant App</h1>
-          <h2>HTML5, CSS3, React, ExpressJS</h2>
-          <p>A fully functional webapp for a pizzeria. On the client side you can place orders and you can see manage them on the admin page.</p>
+          <h1>Restaurant App | FoodFactory</h1>
+          <h2>HTML5, CSS3/SASS, React, ExpressJS</h2>
+          <p>Complete restaurant app with a fully functional backend. The menu is fully dynamic, the site handles bookings and orders as well. The restaurant on it's admin page is able to manage everything.</p>
+          <button onClick={() => window.location.href = "http://portfolioworks.ddns.net/"}>Live Demo</button>
         </div>
+        
       </div>
 
 
-      <div className="projectRow">
+     {/*  <div className="projectRow">
       <div className="projectDescription">
           <h1>ToDo App</h1>
           <h2>HTML5, CSS3, React, ExpressJS</h2>
@@ -33,9 +36,9 @@ function ProjectsPage() {
         </div>
         <img src="./src/img/placeholder.webp" alt="Placeholder" />
         
-      </div>
+      </div> */}
 
-      <button id="projectsSeeMoreButton" onClick={() => alert("Coming Soon")}>See More</button>
+      <button id="projectsSeeMoreButton" onClick={() => alert("Coming Soon. I'm working on large scale portfolio projects, and those are takes a quite of time to make. :)")}>See More</button>
 
 
 

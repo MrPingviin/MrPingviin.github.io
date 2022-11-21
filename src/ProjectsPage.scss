@@ -13,6 +13,7 @@
     gap: 2rem;
     font-size: 1.25rem;
     max-width: 80%;
+
 }
 
 .projectDescription {
@@ -20,6 +21,15 @@
     flex-direction: column;
     gap: 1rem;
     border-bottom: 0.1rem solid #F5333F;
+    padding-bottom: 2rem;
+
+    & button {
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        max-width: 20%;
+    }
+
 }
 
 .projectDescription h1 {
@@ -37,7 +47,9 @@
 
 .projectRow img {
     filter: grayscale(100%);
-    max-width: 30%;
+    max-width: 35%;
+    aspect-ratio: 1, 1;
+
 }
 
 .projectRow img:hover {
