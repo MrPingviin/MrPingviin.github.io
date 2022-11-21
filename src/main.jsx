@@ -8,11 +8,12 @@ import ContactPage from "./ContactPage";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <div>
     <LandingPage />
     <SkillsPage />
     <ProjectsPage />
     <AboutPage />
     <ContactPage />
-  </React.StrictMode>
+  </div>
+
 );
