@@ -130,7 +130,7 @@
   margin-top: 1rem;
   padding: 1rem;
   font-size: 1.2rem;
-  max-width: 20%;
+  max-width: 30%;
 }
 
 .projectDescription h1 {
@@ -148,8 +148,8 @@
 
 .projectRow img {
   filter: grayscale(100%);
-  max-width: 35%;
-  aspect-ratio: 1, 1;
+  max-width: 37.5%;
+  border: 0.5rem solid #F5333F;
 }
 
 .projectRow img:hover {

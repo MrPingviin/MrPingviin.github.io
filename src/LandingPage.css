@@ -41,7 +41,8 @@
   gap: 3rem;
 }
 
-.pageContent_Left, .pageContent_Right hr {
+.pageContent_Left,
+.pageContent_Right hr {
   width: 5rem;
 }
 

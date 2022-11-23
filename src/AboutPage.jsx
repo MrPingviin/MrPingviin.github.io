@@ -1,3 +1,4 @@
+import { WindowSharp } from "@mui/icons-material";
 import "./AboutPage.css";
 
 function AboutPage() {
@@ -29,15 +30,7 @@ function AboutPage() {
                 <hr />
                 <h2>Harvard CS50 | Udemy | LinkedIn Learn</h2>
                 <h3>Ongoing</h3>
-                <h4>
-                  More on my{" "}
-                  <a
-                    href="https://www.linkedin.com/in/rich%C3%A1rd-szab%C3%B3/"
-                    target="blank"
-                  >
-                    LinkedIn
-                  </a>{" "}
-                  profile.
+                <h4>More on my <span onClick={() => window.location.href = "https://www.linkedin.com/in/szabo-richard/"}>LinkedIn</span> profile.
                 </h4>
               </div>
               <div id="hobbySection">
