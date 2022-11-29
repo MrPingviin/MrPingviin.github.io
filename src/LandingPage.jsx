@@ -1,8 +1,34 @@
 import "./LandingPage.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RiCloseCircleFill } from "react-icons/ri";
+import { useEffect, useState } from "react";
 
 function LandingPage() {
+
+  const [yOffset, setYOffset] = useState(window.pageYOffset);
+
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  function handleScroll() {
+    const currentYOffset = window.pageYOffset;
+    const visible = yOffset > currentYOffset;
+    const navbar = document.querySelector("#navbar");
+    
+
+    setYOffset(currentYOffset);
+
+
+   if (currentYOffset < 50 ) {
+    navbar.style.transform = "translateY(0vh)" 
+   } else {
+    if (visible == true ? navbar.style.transform = "translateY(-10vh)" : navbar.style.transform = "translateY(0vh)" );
+   }
+  }
+
   const mobileMenuOpener = () => {
     const target = document.querySelector("#mobile-menu");
     target.style.display = "flex";
@@ -14,6 +40,8 @@ function LandingPage() {
     target.classList.remove("mobile-menu-popup");
     target.style.display = "none";
   };
+
+  
 
   return (
     <div id="landingPage" className="page">

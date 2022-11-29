@@ -4,7 +4,7 @@ import "./ProjectsPage.css";
 function ProjectsPage() {
   return (
     <div id="projectPage" className="page">
-      <div className="pageContent">
+      <div className="pageContent lazyLoad">
         <div className="pageContent_Center">
           <div className="pageTitle">
             <span>02. - My Projects</span> <hr className="hrline" />

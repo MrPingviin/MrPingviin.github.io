@@ -3,7 +3,7 @@ import "./SkillsPage.css";
 function SkillsPage() {
   return (
     <div id="skillsPage" className="page">
-      <div className="pageContent">
+      <div className="pageContent lazyLoad">
         <div className="pageContent_Center">
           <div className="pageTitle">
             <span>01. - My Skills</span> <hr className="hrline" />

@@ -4,7 +4,7 @@ import "./AboutPage.css";
 function AboutPage() {
   return (
     <div id="aboutPage" className="page">
-      <div className="pageContent">
+      <div className="pageContent lazyLoad">
         <div className="pageContent_Center">
           <div className="pageTitle">
             <span>03. - About Me</span> <hr className="hrline" />

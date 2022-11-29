@@ -104,6 +104,29 @@
   border-bottom-width: 0.2rem;
 }
 
+.lazyLoad {
+  opacity: 0;
+  -webkit-animation: lazy 0.2s 3.5s linear forwards;
+          animation: lazy 0.2s 3.5s linear forwards;
+}
+
+@-webkit-keyframes lazy {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes lazy {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #aboutSection {
   display: flex;
   max-width: 100%;

@@ -115,3 +115,18 @@
     border-bottom-width: 0.2rem;
 
 }
+
+.lazyLoad {
+    opacity: 0;
+    animation: lazy 0.2s 3.5s linear forwards;
+  }
+
+  @keyframes lazy {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }

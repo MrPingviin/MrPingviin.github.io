@@ -1,9 +1,12 @@
 import "./ContactPage.css";
 
 function ContactPage() {
+
+  
+
   return (
     <div id="contactPage" className="page">
-      <div className="pageContent">
+      <div className="pageContent lazyLoad">
         <div className="pageContent_Center">
           <div className="pageTitle">
             <span>04. - Contact me</span> <hr className="hrline" />
