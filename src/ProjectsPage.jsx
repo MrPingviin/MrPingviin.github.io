@@ -13,24 +13,21 @@ function ProjectsPage() {
           <div id="projectSection">
             <div className="projectRow">
               <img
-                src="./src/img/food_factory.webp"
+                src="./src/img/Spotify_Visualizer.webp"
                 alt="Placeholder"
                 onClick={() =>
-                  (window.location.href = "http://portfolioworks.ddns.net/")
+                  (window.location.href = "https://spotify-profile-visualizer-app.vercel.app/")
                 }
               />
               <div className="projectDescription">
-                <h1>Restaurant App | FoodFactory</h1>
-                <h2>HTML5, CSS3/SASS, React, ExpressJS</h2>
+                <h1>Spotify Visualizer WebApp</h1>
+                <h2>React, Styled Components, ExpressJS, SpotifyAPI</h2>
                 <p>
-                  Complete restaurant app with a fully functional backend. The
-                  menu is fully dynamic, the site handles bookings and orders as
-                  well. The restaurant on it's admin page is able to manage
-                  everything.
+                  Complete Spotify profile visualizer webapp using the SpotifyAPI. Here you can check your toplists, followed artists, recent played songs and your playlists as well. Login with by just one click with your Spotify account and check it out.
                 </p>
                 <button
                   onClick={() =>
-                    (window.location.href = "http://portfolioworks.ddns.net/")
+                    (window.location.href = "https://spotify-profile-visualizer-app.vercel.app/")
                   }
                 >
                   Live Demo
