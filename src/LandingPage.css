@@ -102,6 +102,29 @@
   border-left: none;
   border-right: none;
   border-bottom-width: 0.2rem;
+}
+
+.lazyLoad {
+  opacity: 0;
+  -webkit-animation: lazy 0.2s 1.1s linear forwards;
+  animation: lazy 0.2s 1.1s linear forwards;
+}
+
+@-webkit-keyframes lazy {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lazy {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 } /*# sourceMappingURL=PageSample.css.map */
 #navbar {
   display: flex;
@@ -205,32 +228,37 @@
 
 #githubSideButton {
   transform: rotateZ(-60deg) translateY(-500%);
-  -webkit-animation: sidebutton_anim 0.2s 2.7s linear forwards;
-          animation: sidebutton_anim 0.2s 2.7s linear forwards;
+  -webkit-animation: sidebutton_anim 0.2s 1.3s linear forwards;
+          animation: sidebutton_anim 0.2s 1.3s linear forwards;
+  opacity: 0;
 }
 
 #mailSideButton {
   transform: rotateZ(-60deg) translateY(-500%);
-  -webkit-animation: sidebutton_anim 0.2s 2.9s linear forwards;
-          animation: sidebutton_anim 0.2s 2.9s linear forwards;
+  -webkit-animation: sidebutton_anim 0.2s 1.5s linear forwards;
+          animation: sidebutton_anim 0.2s 1.5s linear forwards;
+  opacity: 0;
 }
 
 #linkedinSideButton {
   transform: rotateZ(-60deg) translateY(-500%);
-  -webkit-animation: sidebutton_anim 0.2s 3.1s linear forwards;
-          animation: sidebutton_anim 0.2s 3.1s linear forwards;
+  -webkit-animation: sidebutton_anim 0.2s 1.7s linear forwards;
+          animation: sidebutton_anim 0.2s 1.7s linear forwards;
+  opacity: 0;
 }
 
 #leftSideline {
   transform: translateY(10rem) rotate(90deg);
-  -webkit-animation: leftsideline_anim 0.2s 3.3s linear forwards;
-          animation: leftsideline_anim 0.2s 3.3s linear forwards;
+  -webkit-animation: leftsideline_anim 0.2s 1.9s linear forwards;
+          animation: leftsideline_anim 0.2s 1.9s linear forwards;
+  opacity: 0;
 }
 
 #sideEmail {
   transform: translateX(10rem);
-  -webkit-animation: sideEmail_anim 0.2s 3.3s linear forwards;
-          animation: sideEmail_anim 0.2s 3.3s linear forwards;
+  -webkit-animation: sideEmail_anim 0.2s 2.1s linear forwards;
+          animation: sideEmail_anim 0.2s 2.1s linear forwards;
+  opacity: 0;
 }
 #sideEmail:hover {
   cursor: pointer;
@@ -239,8 +267,9 @@
 
 #right_sideline {
   transform: translateY(10rem) rotate(90deg);
-  -webkit-animation: rightsideline_anim 0.2s 3.3s linear forwards;
-          animation: rightsideline_anim 0.2s 3.3s linear forwards;
+  -webkit-animation: rightsideline_anim 0.2s 2.3s linear forwards;
+          animation: rightsideline_anim 0.2s 2.3s linear forwards;
+  opacity: 0;
 }
 
 #navbar-content {
@@ -307,66 +336,82 @@
 @-webkit-keyframes rightsideline_anim {
   0% {
     transform: translateY(10rem) rotate(90deg);
+    opacity: 0;
   }
   100% {
     transform: translateY(0rem) rotate(90deg);
+    opacity: 1;
   }
 }
 
 @keyframes rightsideline_anim {
   0% {
     transform: translateY(10rem) rotate(90deg);
+    opacity: 0;
   }
   100% {
     transform: translateY(0rem) rotate(90deg);
+    opacity: 1;
   }
 }
 @-webkit-keyframes sideEmail_anim {
   0% {
     transform: translateX(10rem);
+    opacity: 0;
   }
   100% {
     transform: translateX(0rem);
+    opacity: 1;
   }
 }
 @keyframes sideEmail_anim {
   0% {
     transform: translateX(10rem);
+    opacity: 0;
   }
   100% {
     transform: translateX(0rem);
+    opacity: 1;
   }
 }
 @-webkit-keyframes leftsideline_anim {
   0% {
     transform: translateY(10rem) rotate(90deg);
+    opacity: 0;
   }
   100% {
     transform: translateY(0rem) rotate(90deg);
+    opacity: 1;
   }
 }
 @keyframes leftsideline_anim {
   0% {
     transform: translateY(10rem) rotate(90deg);
+    opacity: 0;
   }
   100% {
     transform: translateY(0rem) rotate(90deg);
+    opacity: 1;
   }
 }
 @-webkit-keyframes sidebutton_anim {
   0% {
     transform: rotateZ(-60deg) translateY(-500%);
+    opacity: 0;
   }
   100% {
     transform: rotateZ(0deg) translateY(0%);
+    opacity: 1;
   }
 }
 @keyframes sidebutton_anim {
   0% {
     transform: rotateZ(-60deg) translateY(-500%);
+    opacity: 0;
   }
   100% {
     transform: rotateZ(0deg) translateY(0%);
+    opacity: 1;
   }
 }
 @-webkit-keyframes fadein_anim {

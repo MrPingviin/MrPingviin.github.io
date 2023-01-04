@@ -106,8 +106,8 @@
 
 .lazyLoad {
   opacity: 0;
-  -webkit-animation: lazy 0.2s 3.5s linear forwards;
-          animation: lazy 0.2s 3.5s linear forwards;
+  -webkit-animation: lazy 0.2s 1.1s linear forwards;
+          animation: lazy 0.2s 1.1s linear forwards;
 }
 
 @-webkit-keyframes lazy {
@@ -171,8 +171,9 @@
 
 .projectRow img {
   filter: grayscale(100%);
-  max-width: 37.5%;
+  max-height: 15rem;
   border: 0.5rem solid #F5333F;
+  aspect-ratio: 16, 9;
 }
 
 .projectRow img:hover {

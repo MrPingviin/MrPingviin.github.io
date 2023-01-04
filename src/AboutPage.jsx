@@ -13,7 +13,7 @@ function AboutPage() {
           <div id="aboutSection">
             <div id="aboutImage">
               <img
-                src="./src/img/placeholder_myself.webp"
+                src="./src/img/me.webp"
                 id="picOfMe"
                 alt="Richard Szabo, owner of penguinweb.eu. Frontend developer."
               />

@@ -103,7 +103,7 @@ function LandingPage() {
                 id="resumeButton-mobile"
                 onClick={() =>
                   (window.location.href =
-                    "https://penguinweb.eu/Richard-Szabo-Frontend-Developer-CV.pdf")
+                    "https://penguinweb.eu/CV_Richard_Szabo_Frontend_Developer.pdf")
                 }
               >
                 Resume
@@ -159,7 +159,7 @@ function LandingPage() {
                 id="resumeButton"
                 onClick={() =>
                   (window.location.href =
-                    "https://penguinweb.eu/Richard-Szabo-Frontend-Developer-CV.pdf")
+                    "https://penguinweb.eu/CV_Richard_Szabo_Frontend_Developer.pdf")
                 }
               >
                 Resume

@@ -47,8 +47,9 @@
 
 .projectRow img {
     filter: grayscale(100%);
-    max-width: 37.5%;
+    max-height: 15rem;
     border: 0.5rem solid #F5333F;
+    aspect-ratio: 16, 9;
 
 
 }

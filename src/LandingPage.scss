@@ -93,28 +93,33 @@
 
 #githubSideButton {
   transform: rotateZ(-60deg) translateY(-500%);
-  animation: sidebutton_anim 0.2s 2.7s linear forwards;
+  animation: sidebutton_anim 0.2s 1.3s linear forwards;
+  opacity: 0;
 }
 
 #mailSideButton {
   transform: rotateZ(-60deg) translateY(-500%);
-  animation: sidebutton_anim 0.2s 2.9s linear forwards;
+  animation: sidebutton_anim 0.2s 1.5s linear forwards;
+  opacity: 0;
 
 }
 
 #linkedinSideButton {
   transform: rotateZ(-60deg) translateY(-500%);
-  animation: sidebutton_anim 0.2s 3.1s linear forwards;
+  animation: sidebutton_anim 0.2s 1.7s linear forwards;
+  opacity: 0;
 }
 
 #leftSideline {
   transform: translateY(10rem) rotate(90deg);
-  animation: leftsideline_anim 0.2s 3.3s linear forwards;
+  animation: leftsideline_anim 0.2s 1.9s linear forwards;
+  opacity: 0;
 }
 
 #sideEmail {
   transform: translateX(10rem);
-  animation: sideEmail_anim 0.2s 3.3s linear forwards;
+  animation: sideEmail_anim 0.2s 2.1s linear forwards;
+  opacity: 0;
 
   &:hover {
     cursor: pointer;
@@ -124,7 +129,8 @@
 
 #right_sideline {
   transform: translateY(10rem) rotate(90deg);
-  animation: rightsideline_anim 0.2s 3.3s linear forwards;
+  animation: rightsideline_anim 0.2s 2.3s linear forwards;
+  opacity: 0;
 }
 
 
@@ -198,40 +204,48 @@
 @keyframes rightsideline_anim {
   0% {
     transform: translateY(10rem) rotate(90deg);
+    opacity: 0;
   }
 
   100% {
     transform: translateY(0rem) rotate(90deg);
+    opacity: 1;
   }
 }
 
 @keyframes sideEmail_anim {
   0% {
     transform: translateX(10rem);
+    opacity: 0;
   }
 
   100% {
     transform: translateX(0rem);
+    opacity: 1;
   }
 }
 
 @keyframes leftsideline_anim {
   0% {
     transform: translateY(10rem) rotate(90deg);
+    opacity: 0;
   }
 
   100% {
     transform: translateY(0rem) rotate(90deg);
+    opacity: 1;
   }
 }
 
 @keyframes sidebutton_anim {
   0% {
     transform: rotateZ(-60deg) translateY(-500%);
+    opacity: 0;
   }
 
   100% {
     transform: rotateZ(0deg) translateY(0%);
+    opacity: 1;
   }
 }
 
