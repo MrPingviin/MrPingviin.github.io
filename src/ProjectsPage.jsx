@@ -14,7 +14,7 @@ function ProjectsPage() {
             <div className="projectRow">
               <img
                 src="./src/img/Spotify_Visualizer.webp"
-                alt="Placeholder"
+                alt="Portfolio work. Spotify profile visualizer."
                 onClick={() =>
                   (window.location.href = "https://spotify-profile-visualizer-app.vercel.app/")
                 }
@@ -35,15 +35,24 @@ function ProjectsPage() {
               </div>
             </div>
 
-            {/*  <div className="projectRow">
+            <div className="projectRow">
       <div className="projectDescription">
-          <h1>ToDo App</h1>
-          <h2>HTML5, CSS3, React, ExpressJS</h2>
-          <p>Are you a busy man? Then this app is made for you! You can write down and track your todos. Also you are able to organize them based on urgency.</p>
+          <h1>Todo App</h1>
+          <h2>VueJS, Typescript, Stylized Components</h2>
+          <p>In this app you can add and track your todos. Everything you add or delete is saved on server side. Give it a try by clicking on the "Live Demo" button.</p>
+          <button
+                  onClick={() =>
+                    (window.location.href = "https://63b97abd70c53214d8f3f5bc--polite-shortbread-85d94b.netlify.app/")
+                  }
+                >
+                  Live Demo
+                </button>
         </div>
-        <img src="./src/img/placeholder.webp" alt="Placeholder" />
+        <img src="./src/img/todoApp_VueJS.webp" alt="Portfolio work. Todo App written in VueJS." onClick={() =>
+                    (window.location.href = "https://63b97abd70c53214d8f3f5bc--polite-shortbread-85d94b.netlify.app/")
+                  } />
         
-      </div> */}
+      </div>
 
             <button
               id="projectsSeeMoreButton"

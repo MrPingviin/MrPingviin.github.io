@@ -2,9 +2,10 @@ import "./LandingPage.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RiCloseCircleFill } from "react-icons/ri";
 import { useEffect, useState } from "react";
+import { AiOutlineArrowUp } from "react-icons/ai"
 
 function LandingPage() {
-
+  
   const [yOffset, setYOffset] = useState(window.pageYOffset);
 
 
@@ -30,14 +31,18 @@ function LandingPage() {
   }
 
   const mobileMenuOpener = () => {
+    const toTopButton = document.querySelector("#toTopContainer");
     const target = document.querySelector("#mobile-menu");
     target.style.display = "flex";
+    toTopButton.style.display = "none";
     target.classList.add("mobile-menu-popup");
   };
 
   const mobileMenuCloser = () => {
+    const toTopButton = document.querySelector("#toTopContainer");
     const target = document.querySelector("#mobile-menu");
     target.classList.remove("mobile-menu-popup");
+    toTopButton.style.display = "flex";
     target.style.display = "none";
   };
 
@@ -45,6 +50,11 @@ function LandingPage() {
 
   return (
     <div id="landingPage" className="page">
+      <div id="toTopContainer" className="lazyLoad" onClick={() => window.location.href = "#landingPage"}>
+      <button id="toTopButton">
+      <AiOutlineArrowUp/>
+      </button>
+      </div>
       <div id="mobile-menu" className="mobile">
         <div id="mobile-menu-content">
           <RiCloseCircleFill

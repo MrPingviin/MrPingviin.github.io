@@ -429,4 +429,26 @@
   100% {
     opacity: 1;
   }
+}
+#toTopContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 7.5vw;
+  bottom: 7.5vh;
+  opacity: 0;
+  z-index: 999;
+}
+
+#toTopButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #850404;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 10rem;
 }/*# sourceMappingURL=LandingPage.css.map */

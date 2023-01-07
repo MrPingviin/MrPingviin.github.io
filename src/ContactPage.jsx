@@ -41,7 +41,7 @@ function ContactPage() {
             </div>
           </div>
           <div id="copyrightSection">
-            <span>Penguinweb @ 2022</span>
+            <span>Penguinweb @ 2023</span>
             <span>Made with ❤️ by Richard Szabo</span>
           </div>
         </div>
