@@ -42,14 +42,14 @@ function ProjectsPage() {
           <p>In this app you can add and track your todos. Everything you add or delete is saved on server side. Give it a try by clicking on the "Live Demo" button.</p>
           <button
                   onClick={() =>
-                    (window.location.href = "https://63b97abd70c53214d8f3f5bc--polite-shortbread-85d94b.netlify.app/")
+                    (window.location.href = "https://polite-shortbread-85d94b.netlify.app/")
                   }
                 >
                   Live Demo
                 </button>
         </div>
         <img src="./src/img/todoApp_VueJS.webp" alt="Portfolio work. Todo App written in VueJS." onClick={() =>
-                    (window.location.href = "https://63b97abd70c53214d8f3f5bc--polite-shortbread-85d94b.netlify.app/")
+                    (window.location.href = "https://polite-shortbread-85d94b.netlify.app/")
                   } />
         
       </div>
