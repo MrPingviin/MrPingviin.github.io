@@ -38,7 +38,7 @@ function ProjectsPage() {
             <div className="projectRow">
       <div className="projectDescription">
           <h1>Todo App</h1>
-          <h2>VueJS, Typescript, Stylized Components</h2>
+          <h2>VueJS, Typescript, Styled Components</h2>
           <p>In this app you can add and track your todos. Everything you add or delete is saved on server side. Give it a try by clicking on the "Live Demo" button.</p>
           <button
                   onClick={() =>
