@@ -16,7 +16,8 @@ function SkillsPage() {
                 alt="Red javascript logo"
               />
               <span>Javascript</span>
-              <span>ES6</span>
+    
+
             </div>
 
             <div className="skillCard">
